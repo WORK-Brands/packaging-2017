@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js demo-1">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Truth Reels – A Pitch Book by WORK Labs</title>
+		<meta name="description" content="Truth Reels – A Pitch Book by WORK Labs" />
+		<meta name="keywords" content="advertising, branding, truth, truth reels, fishing, work, labs, brand, identity, packaging" />
+		<meta name="author" content="WORK Labs" />
+
+		<meta property="og:title" content="Truth Reels – A Pitch Book by WORK Labs">
+		<meta property="og:description" content="A small company came to us needing a different name and different logo. ">
+		<meta property="og:image" content="https://worklabs.github.io/truth-reels/images/truth-share.jpg">
+		<meta property="og:url" content="https://worklabs.github.io/truth-truth/">
+		<meta property="og:type" content="website">
+
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<!-- custom demo style -->
+		<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://www.worklabs.com"><span>Back to WORK Labs Portfolio</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="pdf/truth.pdf" download><span>Download PDF</span></a></span>
+			</div>
+			<header>
+				<h1>Truth Reels <span>A Pitch Book by <a href="https://www.worklabs.com/">WORK Labs</a></span></h1>
+			</header>
+			<div class="main clearfix">
+				<div class="bb-custom-wrapper">
+					<h3>Designed by <a href="https://www.worklabs.com/">Cabell Harris</a>. Photography by <a href="https://www.chrisrossharris.com">Chris Harris</a></h3>
+					<div id="bb-bookblock" class="bb-bookblock">
+						<div class="bb-item">
+							<img src="images/truth1.png"  srcset="images/truth1@2x.png 2x" alt="Truth Reels Pitch Book Front Cover"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth2.jpg" srcset="images/truth2@2x.jpg 2x" alt="Truth Reels Pitch Book Inside Cover"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth3.jpg" srcset="images/truth3@2x.jpg 2x" alt="Truth Reels Rebranding Logo, Flag and Initial Spread Ad"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth4.jpg" srcset="images/truth4@2x.jpg 2x" alt="Truth Reels Pledge Engraved Reel Owner's Manual"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth5.jpg" srcset="images/truth5@2x.jpg 2x" alt="Truth Reels Packaging"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth6.jpg" srcset="images/truth6@2x.jpg 2x" alt="Truth Reels Business Cards"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth7.jpg" srcset="images/truth7@2x.jpg 2x" alt="Truth Reels Timeline and Portraits"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth8.jpg" srcset="images/truth8@2x.jpg 2x" alt="Truth Reels Half Page Ad, Drinking Glass and Workplace Shots"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth9.jpg" srcset="images/truth9@2x.jpg 2x" alt="Truth Reels Branding, Packaging and Collateral"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth10.jpg" srcset="images/truth10@2x.jpg 2x" alt="Truth Reels Lifestyle Apparel, Webstie and Inside Back Cover"/>
+						</div>
+						<div class="bb-item">
+							<img src="images/truth11.png" srcset="images/truth11@2x.png 2x" alt="Truth Reels Back Cover"/>
+						</div>
+
+						<div class="bb-info-left">
+							<p>Swipe right to flip through the book <span class="codrops-icon codrops-icon-next"></span>
+							</p>
+						</div>
+						<div class="bb-info-right">
+							<p>Like what you see?<br>
+								<a href="mailto:info@worklabs.com?subject=New Business">Contact WORK Labs</a>
+							</p>
+
+						</div>
+					</div>
+					<nav>
+						<a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+						<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+						<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+						<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+					</nav>
+
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script>
+			var Page = (function() {
+
+				var config = {
+						$bookBlock : $( '#bb-bookblock' ),
+						$navNext : $( '#bb-nav-next' ),
+						$navPrev : $( '#bb-nav-prev' ),
+						$navFirst : $( '#bb-nav-first' ),
+						$navLast : $( '#bb-nav-last' )
+					},
+					init = function() {
+						config.$bookBlock.bookblock( {
+							speed : 800,
+							shadowSides : 0.8,
+							shadowFlip : 0.7
+						} );
+						initEvents();
+					},
+					initEvents = function() {
+
+						var $slides = config.$bookBlock.children();
+
+						// add navigation events
+						config.$navNext.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'next' );
+							return false;
+						} );
+
+						config.$navPrev.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'prev' );
+							return false;
+						} );
+
+						config.$navFirst.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'first' );
+							return false;
+						} );
+
+						config.$navLast.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'last' );
+							return false;
+						} );
+
+						// add swipe events
+						$slides.on( {
+							'swipeleft' : function( event ) {
+								config.$bookBlock.bookblock( 'next' );
+								return false;
+							},
+							'swiperight' : function( event ) {
+								config.$bookBlock.bookblock( 'prev' );
+								return false;
+							}
+						} );
+
+						// add keyboard events
+						$( document ).keydown( function(e) {
+							var keyCode = e.keyCode || e.which,
+								arrow = {
+									left : 37,
+									up : 38,
+									right : 39,
+									down : 40
+								};
+
+							switch (keyCode) {
+								case arrow.left:
+									config.$bookBlock.bookblock( 'prev' );
+									break;
+								case arrow.right:
+									config.$bookBlock.bookblock( 'next' );
+									break;
+							}
+						} );
+					};
+
+					return { init : init };
+
+			})();
+		</script>
+		<script>
+				Page.init();
+		</script>
+	</body>
+</html>
