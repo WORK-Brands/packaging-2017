@@ -238,7 +238,7 @@
 
 			}
 
-			if ( this.current > 0 && this.current < 10 ) {
+			if ( this.current > 0 && this.current < 24 ) {
 				// fade in bb-info-right p
 
 				$( ".bb-bookblock" ).css( "box-shadow", "0 12px 20px -10px rgba(81,64,49,0.6)" );
